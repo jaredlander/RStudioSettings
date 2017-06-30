@@ -1,0 +1,35 @@
+snippet [
+	[${1:label}](${2:location})
+
+snippet ![
+	![${1:label}](${2:location})
+
+snippet r
+	```{r ${1:label}, ${2:options}}
+	${0}
+	```
+
+snippet rcpp
+	```{r, engine='Rcpp'}
+	#include <Rcpp.h>
+	using namespace Rcpp;
+	
+	${0}
+	
+	```
+
+snippet note
+	<div class='notes'>
+	${0}
+	</div>
+
+snippet slide
+	## ${1} {name=${2}}
+	
+	${0}
+
+snippet back
+	```{r results='asis'}
+	makeBG('${1}', file.path(imageDir, '${2}'))
+	```
+	${0}
